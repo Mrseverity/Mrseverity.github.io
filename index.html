@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style1.css"/>
+    <script src="./js/jquery-3.4.1.min.js" charset="utf-8"></script>
+    <script src="./js/login.js"></script>
+</head>
+<body>  
+    <div class="login-form">
+        <h1>Login</h1>
+
+        <div class="txtb">
+            <input type="text" id="usn">
+            <span data-placeholder="Username"></span>
+        </div>
+
+        <div class="txtb">
+            <input type="password" id="pwd">
+            <span data-placeholder="Password"></span>
+        </div>
+
+        <input type="submit" class="logbtn" value="登陆" onclick="login()">
+    </div>
+
+    <script type="text/javascript">
+        $(".txtb input").on("focus", function(){
+                $(this).addClass("focus");
+            });
+            $(".txtb input").on("blur", function(){
+                if($(this).val() == "")
+                $(this).removeClass("focus");
+            });
+    </script>
+</body>
+</html>
