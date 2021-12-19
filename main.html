@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>三三的窝</title>
     <link rel="stylesheet" type="text/css" href="./Bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="./css/IndexStyle.css"></link>
+    <link rel="stylesheet" type="text/css" href="./css/IndexStyle.css">
+    <link rel="stylesheet" type="text/css" href="./css/animate.css">
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/wow.js"></script>
 </head>
 <body>
     <!--首页图-->
@@ -100,38 +103,22 @@
     <nav class="navbar navbar-default nav-all navbar-fixed-top mynav">
         <div class="container-fluid mycontainer">
           <div class="navbar-header navbar_head">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
             <a class="navbar-brand" href="#">
                 <ruby>
                     <span class="sakuraso">一的阁楼</span>
                     <span class="no">の</span>
                     <span class="shironeko">初三</span>
                     <rp></rp>
-                    <rt class="chinese-font">一的初三</rt>
+                    <rt class="chinese-font">一和初三</rt>
                     <rp></rp>
                 </ruby>
             </a>
           </div>
       
-          <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav my-nav-icon">
               <li class="icon_1"><a href="#"><img src="img/城堡.png" class="icon_nav icon-nav-1"><span>首页</span><div class="icon_div1"></div></a></li>
-              <li class="dropdown icon_2">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="img/箱子.png" class="icon_nav icon-nav-2"><span>归档</span><div class="icon_div2"></div></a>
-                <ul class="dropdown-menu menu-guidang">
-                  <li><a href="#"><span class="glyphicon glyphicon-console" aria-hidden="true"></span>&nbsp;&nbsp;极客</a></li>
-                  <li><a href="#"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>&nbsp;&nbsp;文章</a></li>
-                  <li><a href="#"><span class="glyphicon glyphicon-film" aria-hidden="true"></span>&nbsp;&nbsp;影评</a></li>
-                  <li><a href="#"><span class="glyphicon glyphicon-time" aria-hidden="true"></span>&nbsp;&nbsp;随想</a></li>
-                  <li><a href="#"><span class="glyphicon glyphicon-book" aria-hidden="true"></span>&nbsp;&nbsp;笔记</a></li>
-                </ul>
-              </li>
+              
               
               <li class="icon_3"><a href="#"><img src="img/清单.png" class="icon_nav icon-nav-3"><span>清单</span><div class="icon_div3"></div></a></li>
               <li class="icon_4"><a href="#"><img src="img/留言板.png" class="icon_nav icon-nav-4"><span>留言板</span><div class="icon_div4"></div></a></li>
@@ -148,22 +135,13 @@
             </form>
             <ul class="nav navbar-nav navbar-right">
               <li class="icon_9" id="login"><a href="#"><img src="img/哔哩哔哩.png" class="icon_nav icon-nav-9"><span >yangyi</span></a></li>
-              <li class="dropdown li_user">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="img/用户.png" class="icon_nav"><span>个人中心</span><span class="caret"></span><div class="login-success"></div></a>
-                <ul class="dropdown-menu mymenu_user">
-                  <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;<span class="user-nologin">你还未登陆</span></a></li>
-                  <li><a href="#"><span class="glyphicon glyphicon-flag" aria-hidden="true"></span>&nbsp;&nbsp;<span class="user-nosign">或点击下方注册</span></a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#"><span class="glyphicon glyphicon-glyphicon-off" aria-hidden="true"></span>&nbsp;&nbsp;<span id="user-sign">注册(Sign)</span></a></li>
-                </ul>
-              </li>
             </ul>
           </div>
         </div>
       </nav>
 
       <div id="content" class="site-content">
-        <!-- 首部 -->
+        <!-- 第一部分-->
         <div class="top-feature-row wow bounceInUp">
             <h1 class="fes-title">
                 <i class="fa fa-anchor"></i>
@@ -211,16 +189,16 @@
         </div>
         
         
-        <!-- 主体部分 -->
+        <!-- 第二部分 -->
         <div id="primary" class="content-area ">
             
             <main id="main" class="site-main" role="main">
-                <!-- 首部 -->
+                <!-- 头 -->
                 <h1 class="main-title wow bounceInUp fadeln">
                     <i class="fa fa-envira" aria-hidden="true"></i>
                     " 初三的小窝"
                 </h1>
-                <!-- 文章部分 -->
+                <!-- body -->
                 <div class="wow bounceInLeft ">
                     <article class="post post-list-thumb post-list-show">
                         <div class="post-thumb">
@@ -263,7 +241,7 @@
                         </div>
                     </article>
                 </div>
-                <!-- 第二块 -->
+                <!-- 第三部分 -->
                 <div class="wow bounceInRight">
                     <article class="post post-list-thumb post-list-show">
                         <div class="post-thumb">
@@ -306,7 +284,7 @@
                         </div>
                     </article>
                 </div>
-                <!-- 第三块 -->
+                <!-- 第四部分 -->
                 <div class="wow bounceInLeft">
                     <article class="post post-list-thumb post-list-show">
                         <div class="post-thumb">
@@ -351,7 +329,7 @@
                 </div>
             </main>
             
-            <!-- 结尾部分 -->
+            <!-- footer -->
             <div class="site-info">
                 <!-- 旋转小樱花 -->
                 <img src="img/sakura.svg"class="foo-logo" >
@@ -360,7 +338,7 @@
                     <span class="last-text">
                         感谢
                         <i class="fa fa-heart animated"></i>
-                        各位大佬
+                        各位大佬观看
                     </span>
                 </p>
                 <p>
