@@ -8,9 +8,6 @@ body{
 	padding-top: 60px;
 	background: url(../img/little-monster.png);
 	position: relative;
-/* 	data-spy:scroll;
-	data-target:.scrollbar; 
-	data-offset:50px; */
 }
 h1 {
 	margin: .67em 0;
@@ -54,17 +51,6 @@ p {
 	font-size: 80px;
 	text-transform: uppercase;
 }
-/* 飘落 */
-.snow-container {
-	position:fixed;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
-	pointer-events:none;
-	z-index:100001;
-}
-/* BGM */
 /* 文字动画 */
 .glitch {
 	position: relative;
@@ -141,16 +127,6 @@ p {
 		clip:rect(15px,9999px,149px,0)
 	}
 }
-/* 导航栏背景测试 */
-.mynav {
-	background-color: pink;
-}
-/* logo背景色 */
-.sakuraso {
-	background-color:rgba(255,255,255,.5);
-	color: #464646;
-	border-radius: 5px;
-}
 /* log字体rt设置 */
 .navbar-brand ruby rt {
 	font-size: 10px;
@@ -200,12 +176,6 @@ p {
 /*搜索 */
 .btn_search {
 	border: none;
-}
-/* 导航 */
-.mycontainer {
-	background-color: rgba(255,255,255,0.95);
-	height: 60px;
-	box-shadow: 0 1px 40px -8px rgba(0,0,0,.5)
 }
 /* 导航图标下划线 */
 .icon_div1{
@@ -292,8 +262,7 @@ p {
 	transition: width 0.5s;
 }
 
-
-/* 导航图标动画 */
+    /* 导航图标动画 */
 .icon_1:hover .icon-nav-1{
 
 	animation:tada 1s .1s infinite both;
@@ -329,10 +298,6 @@ p {
 .icon_9:hover .icon-nav-9{
 
 	animation:tada 1s .1s infinite both;
-}
-.cd-top:hover {
-
-	/* animation:tada 1s .1s infinite both; */
 }
 @keyframes tada {
 	0% {
@@ -468,20 +433,6 @@ p {
 .mycption {
 	margin-bottom: 190px;
 }
-
-/* 右侧滚动回到顶部 */
-.cd-top {
-	position: fixed;
-	right: 25px;
-	top: 900px;
-	z-index: 99;
-	width: 70px;
-	height: 900px;
-	background: url(../img/scroll.png);
-	background-size: contain;
-	transition: all .5s ease-in-out;
-}
-
 /* 顶部颜色条 */
 .scrollbar {
 	position: fixed;
@@ -509,12 +460,8 @@ p {
   background-color: orange;
   transition: all .2s;
   border-radius: .5rem;
- 
-  &:hover {
-    background-color: rgba(95,95,95, .7);
-  }
 }
-/* 主体定位 */
+/* main定位 */
 .site-content {
 	max-width: 800px;
 	padding: 0 10px;
@@ -523,7 +470,7 @@ p {
 	background-color: rgba(255,255,255,.8);
 	height: 1500px;
 }
-/* 主体头部 */
+/* 主体head */
 .top-feature-row {
 	width: 100%;
 	height: auto;
@@ -640,7 +587,6 @@ p {
     border-radius: 10px;
     background-color: rgba(255,255,255,0);
     box-shadow: 0 1px 20px -6px rgba(0,0,0,.5);
-/*    opacity: 0; */
     transition: box-shadow .3s ease;
 }
 .post-thumb {
@@ -654,7 +600,6 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
-   /* border-radius: 0 10px 10px 0; */
 }
 /* 内容图片 */
 .post-thumb a img {
@@ -719,7 +664,6 @@ p {
 }
 .left-img {
 	right: 351px;
-	/* border-radius: 10px 0 0 10px; */
 }
 .left-img img {
 	border-radius: 10px 0 0 10px;
